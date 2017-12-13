@@ -1,0 +1,34 @@
+body {
+  	background: url("../img/grey.png"); 
+  	line-height: 2;
+	font-family: 'Orbitron', sans-serif;
+}
+
+#websiteLogo {
+	height: 100px;
+	width: 100px;
+}
+
+.headerText {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 60px;
+	text-align: center;
+}
+
+#headerWell {
+	margin-top: 25px;
+}
+
+.well {
+	background-color: #E2E5DE!important;
+
+}
+
+#trainTable td {
+	background-color: #fff;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#trainTable th {
+	background-color: #6fc6eb;
+}

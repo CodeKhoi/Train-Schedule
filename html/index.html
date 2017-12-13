@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="shortcut icon" type="image/png" href="../assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+
+	<title>Train Scheduler</title>
+</head>
+<body>
+
+<div class='container'>
+  <div class="well" id='headerWell'>
+    <h1 class="headerText">Train Schedule</h1>
+  </div>
+<div><!-- container -->
+
+<div class='card-panel trainInfo'>
+  <table class="table table-striped center bordered responsive-table table-hover table-condensed" id="trainTable">
+    <tr>
+    <th>Train Name</th>
+    <th>Destination</th>
+    <th>Frequency (minutes)</th>
+    <th>Next Arrival</th>
+    <th>Minutes Away</th>
+    </tr>
+  </table>
+</div>
+
+<div class="well well-lg">
+  <div class='card-panel'>
+    <h4 class='center-align'>Add Your Train</h4>
+      <form>
+      <div class="form-group">
+      <input type="text" class="validate" id="trainNameInput">
+      <label for="">Train Name</label>
+      </div>
+      <div class="form-group">
+      <input type="text" class="validate" id="destinationInput">
+      <label for="">Destination</label>
+      </div>
+      <div class="form-group">
+      <input type="time" class="validate" id="firstInput">
+      <label class='active' for="">First Train (HH:mm Military Time)</label>
+      </div>
+      <div class="form-group">
+      <input type="number" class="validate" id="frequencyInput">
+      <label for="">Frequency (minutes)</label>
+      </div>
+      <button type="submit" class="btn btn-info" id="addTrainBtn">Submit</button>
+      </form>
+      </div>
+  </div>
+</div>
+
+
+<script src="../assets/js/jquery-3.2.1.min.js"></script>
+<script src="../assets/js/train.js"></script>
+</body>
+</html>
